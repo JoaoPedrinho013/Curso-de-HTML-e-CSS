@@ -1,40 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
+
 <body>
-    <h1>Outras formatações</h1>
-    <hr>
-    <h2>Codigo-Fonte/ Pré-Formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
-    <hr>
-    <pre>
-        <code>
-    num = int(input('Digite um número: '))
-    if num % 2 == 0:
-        print(f'O numero {num} é PAR)
-    else:
-        print(f'O numero {num} é ÍMPAR)
-    print('Fim do Programa em Python')
-        </code>
-    </pre>
-    <hr>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <hr>
-    <h2>Citações Completas</h2>
-    <p>Segundo o Lorex, em seu site favorito: </p>
-    <blockquote cite="https://www.xvideos.com">
-        Esse é o melhor site, VAI BRAZINO!
-    </blockquote>
-    <hr>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou amando!</p>
-    <hr>
-    <h2>Texto Inverdito</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <ol type="1" start="3"> <!--
+        Tem 5 tipos de type para OL:
+    1 numeral
+    A alfabeto maiusculo
+    a alfabeto minusculo
+    I Romano
+    i romano
+    e o start e em qual vai comecar
+     -->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o Trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2> Listas não Ordenadas</h2>
+    <ul type="square"> <!-- 
+    Tem 3 tipos de type para UL
+    disc Deixa um circulo preenchido / mais usado
+    circle Deixa  um circulo sem fundo
+    square Deixa um quadrado preenchido
+    -->
+        <li>Pão
+        <li>Manteiga
+        <li>leite
+        <li>morango
+        <li>feijao
+            <!-- Os LI dos dois pode usar sem fechar a tag!!! mas nao e comumente usado-->
+    </ul>
+
+    <h2>Juntando linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Marios Bross</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castelvania</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguegem de marcacao para a criacao do conteudo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcacao para a criacao do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programacao para a interatividade de um site.</dd>
+    </dl>
 </body>
+<script>
+     
+    
+</script>
+
 </html>
