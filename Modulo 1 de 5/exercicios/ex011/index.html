@@ -15,5 +15,17 @@
         <source  media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem flexivel">
     </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <h3>Foo Fighters - The Pretender</h3>
+    <audio src="midia/FooFighters-ThePretender.mp3"  controls loop></audio>
+    <h3>Kansas - Carry on Wayward Son</h3>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Kansas - Carry on Wayward Son.mp3" type="audio/mpeg">
+        <source src="midia/Kansas - Carry on Wayward Son.ogg" type="audio/ogg">
+        <source src="midia/Kansas - Carry on Wayward Son.wav" type="audio/wav">
+        <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Kansas - Carry on Wayward Son.mp3">Clique aqui para baixar a musica</a></p>
+    </audio>
 </body>
 </html>
